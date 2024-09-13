@@ -87,95 +87,428 @@
 
 # Table :
 
-Here's the markdown table with the original hyperlinks maintained in the first column:
+Certainly! Here’s the HTML table with indentation preserved by adding spacing within the "Topic" column. This maintains the hierarchy similar to the original list of topics.
 
-```markdown
-| Topic                                                                                         | Summary                                                | My Notes |
-| --------------------------------------------------------------------------------------------- | ------------------------------------------------------ | -------- |
-| [System design topics: start here](#system-design-topics-start-here)                          | Introductory topics for system design                  |          |
-| [Step 1: Review the scalability video lecture](#step-1-review-the-scalability-video-lecture)  | Video lecture about scalability                        |          |
-| [Step 2: Review the scalability article](#step-2-review-the-scalability-article)              | Article explaining scalability                         |          |
-| [Next steps](#next-steps)                                                                     | Follow-up actions for further learning                 |          |
-| [Performance vs scalability](#performance-vs-scalability)                                     | Differences between performance and scalability        |          |
-| [Latency vs throughput](#latency-vs-throughput)                                               | Discussion on latency and throughput                   |          |
-| [Availability vs consistency](#availability-vs-consistency)                                   | Concepts of availability and consistency               |          |
-| [CAP theorem](#cap-theorem)                                                                   | Explains the CAP theorem                               |          |
-| [CP - consistency and partition tolerance](#cp---consistency-and-partition-tolerance)         | Consistency and partition tolerance tradeoff           |          |
-| [AP - availability and partition tolerance](#ap---availability-and-partition-tolerance)       | Availability and partition tolerance tradeoff          |          |
-| [Consistency patterns](#consistency-patterns)                                                 | Overview of consistency patterns                       |          |
-| [Weak consistency](#weak-consistency)                                                         | Definition of weak consistency                         |          |
-| [Eventual consistency](#eventual-consistency)                                                 | Overview of eventual consistency                       |          |
-| [Strong consistency](#strong-consistency)                                                     | Definition of strong consistency                       |          |
-| [Availability patterns](#availability-patterns)                                               | Overview of availability strategies                    |          |
-| [Fail-over](#fail-over)                                                                       | Explanation of fail-over techniques                    |          |
-| [Replication](#replication)                                                                   | Discussion on replication methods                      |          |
-| [Availability in numbers](#availability-in-numbers)                                           | Quantifying availability metrics                       |          |
-| [Domain name system](#domain-name-system)                                                     | Explanation of the DNS system                          |          |
-| [Content delivery network](#content-delivery-network)                                         | Overview of CDN concepts                               |          |
-| [Push CDNs](#push-cdns)                                                                       | Explanation of push CDNs                               |          |
-| [Pull CDNs](#pull-cdns)                                                                       | Explanation of pull CDNs                               |          |
-| [Load balancer](#load-balancer)                                                               | Overview of load balancers                             |          |
-| [Active-passive](#active-passive)                                                             | Load balancing technique: active-passive               |          |
-| [Active-active](#active-active)                                                               | Load balancing technique: active-active                |          |
-| [Layer 4 load balancing](#layer-4-load-balancing)                                             | Overview of Layer 4 load balancing                     |          |
-| [Layer 7 load balancing](#layer-7-load-balancing)                                             | Overview of Layer 7 load balancing                     |          |
-| [Horizontal scaling](#horizontal-scaling)                                                     | Explanation of horizontal scaling                      |          |
-| [Reverse proxy (web server)](#reverse-proxy-web-server)                                       | Overview of reverse proxy servers                      |          |
-| [Load balancer vs reverse proxy](#load-balancer-vs-reverse-proxy)                             | Differences between load balancers and reverse proxies |          |
-| [Application layer](#application-layer)                                                       | Explanation of the application layer                   |          |
-| [Microservices](#microservices)                                                               | Overview of microservices architecture                 |          |
-| [Service discovery](#service-discovery)                                                       | Explanation of service discovery                       |          |
-| [Database](#database)                                                                         | Overview of database types                             |          |
-| [Relational database management system (RDBMS)](#relational-database-management-system-rdbms) | Explanation of RDBMS                                   |          |
-| [Master-slave replication](#master-slave-replication)                                         | RDBMS replication technique                            |          |
-| [Master-master replication](#master-master-replication)                                       | Multi-master replication in RDBMS                      |          |
-| [Federation](#federation)                                                                     | Overview of database federation                        |          |
-| [Sharding](#sharding)                                                                         | Explanation of database sharding                       |          |
-| [Denormalization](#denormalization)                                                           | Overview of denormalization                            |          |
-| [SQL tuning](#sql-tuning)                                                                     | Optimization techniques for SQL                        |          |
-| [NoSQL](#nosql)                                                                               | Overview of NoSQL databases                            |          |
-| [Key-value store](#key-value-store)                                                           | Explanation of key-value store                         |          |
-| [Document store](#document-store)                                                             | Overview of document store databases                   |          |
-| [Wide column store](#wide-column-store)                                                       | Explanation of wide column store                       |          |
-| [Graph Database](#graph-database)                                                             | Overview of graph databases                            |          |
-| [SQL or NoSQL](#sql-or-nosql)                                                                 | Discussion on choosing SQL vs NoSQL                    |          |
-| [Cache](#cache)                                                                               | Overview of caching techniques                         |          |
-| [Client caching](#client-caching)                                                             | Explanation of client-side caching                     |          |
-| [CDN caching](#cdn-caching)                                                                   | Explanation of CDN caching                             |          |
-| [Web server caching](#web-server-caching)                                                     | Overview of web server caching                         |          |
-| [Database caching](#database-caching)                                                         | Explanation of database caching                        |          |
-| [Application caching](#application-caching)                                                   | Overview of application caching                        |          |
-| [Caching at the database query level](#caching-at-the-database-query-level)                   | Discussion on caching database queries                 |          |
-| [Caching at the object level](#caching-at-the-object-level)                                   | Explanation of object-level caching                    |          |
-| [When to update the cache](#when-to-update-the-cache)                                         | Strategies for cache updates                           |          |
-| [Cache-aside](#cache-aside)                                                                   | Cache update strategy: cache-aside                     |          |
-| [Write-through](#write-through)                                                               | Cache update strategy: write-through                   |          |
-| [Write-behind (write-back)](#write-behind-write-back)                                         | Cache update strategy: write-back                      |          |
-| [Refresh-ahead](#refresh-ahead)                                                               | Cache update strategy: refresh-ahead                   |          |
-| [Asynchronism](#asynchronism)                                                                 | Overview of asynchronous processes                     |          |
-| [Message queues](#message-queues)                                                             | Explanation of message queues                          |          |
-| [Task queues](#task-queues)                                                                   | Overview of task queues                                |          |
-| [Back pressure](#back-pressure)                                                               | Explanation of back pressure                           |          |
-| [Communication](#communication)                                                               | Overview of communication protocols                    |          |
-| [Transmission control protocol (TCP)](#transmission-control-protocol-tcp)                     | Explanation of TCP                                     |          |
-| [User datagram protocol (UDP)](#user-datagram-protocol-udp)                                   | Explanation of UDP                                     |          |
-| [Remote procedure call (RPC)](#remote-procedure-call-rpc)                                     | Overview of RPC                                        |          |
-| [Representational state transfer (REST)](#representational-state-transfer-rest)               | Explanation of REST                                    |          |
-| [Security](#security)                                                                         | Overview of security in system design                  |          |
-| [Appendix](#appendix)                                                                         | Additional resources and references                    |          |
-| [Powers of two table](#powers-of-two-table)                                                   | Reference table of powers of two                       |          |
-| [Latency numbers every programmer should know](#latency-numbers-every-programmer-should-know) | Reference on latency numbers                           |          |
-| [Additional system design interview questions](#additional-system-design-interview-questions) | List of interview questions                            |          |
-| [Real world architectures](#real-world-architectures)                                         | Discussion of real-world architectures                 |          |
-| [Company architectures](#company-architectures)                                               | Overview of company-specific architectures             |          |
-| [Company engineering blogs](#company-engineering-blogs)                                       | List of engineering blogs by companies                 |          |
-| [Under development](#under-development)                                                       | Future topics under development                        |          |
-| [Credits](#credits)                                                                           | List of contributors and credits                       |          |
-| [Contact info](#contact-info)                                                                 | Contact details for the creators                       |          |
-| [License](#license)                                                                           | Licensing information for the material                 |          |
-```
+Certainly! Here’s the HTML table with indentation preserved by adding spacing within the "Topic" column. This maintains the hierarchy similar to the original list of topics.
 
-This table preserves the links in the first column, while keeping the structure intact for you to fill in the summaries and notes as needed!
+<table border="1">
+  <thead>
+    <tr>
+      <th>Topic</th>
+      <th>Summary</th>
+      <th>My Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="#system-design-topics-start-here">System design topics: start here</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#step-1-review-the-scalability-video-lecture">Step 1: Review the scalability video lecture</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#step-2-review-the-scalability-article">Step 2: Review the scalability article</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#next-steps">Next steps</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="#performance-vs-scalability">Performance vs scalability</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="#latency-vs-throughput">Latency vs throughput</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="#availability-vs-consistency">Availability vs consistency</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#cap-theorem">CAP theorem</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#cp---consistency-and-partition-tolerance">CP - consistency and partition tolerance</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#ap---availability-and-partition-tolerance">AP - availability and partition tolerance</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="#consistency-patterns">Consistency patterns</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#weak-consistency">Weak consistency</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#eventual-consistency">Eventual consistency</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#strong-consistency">Strong consistency</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="#availability-patterns">Availability patterns</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#fail-over">Fail-over</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#replication">Replication</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#availability-in-numbers">Availability in numbers</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="#domain-name-system">Domain name system</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="#content-delivery-network">Content delivery network</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#push-cdns">Push CDNs</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#pull-cdns">Pull CDNs</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="#load-balancer">Load balancer</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#active-passive">Active-passive</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#active-active">Active-active</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#layer-4-load-balancing">Layer 4 load balancing</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#layer-7-load-balancing">Layer 7 load balancing</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#horizontal-scaling">Horizontal scaling</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="#reverse-proxy-web-server">Reverse proxy (web server)</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#load-balancer-vs-reverse-proxy">Load balancer vs reverse proxy</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="#application-layer">Application layer</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#microservices">Microservices</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#service-discovery">Service discovery</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="#database">Database</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#relational-database-management-system-rdbms">Relational database management system (RDBMS)</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#master-slave-replication">Master-slave replication</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#master-master-replication">Master-master replication</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#federation">Federation</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#sharding">Sharding</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#denormalization">Denormalization</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#sql-tuning">SQL tuning</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#nosql">NoSQL</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#key-value-store">Key-value store</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#document-store">Document store</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#wide-column-store">Wide column store</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#graph-database">Graph Database</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#sql-or-nosql">SQL or NoSQL</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="#cache">Cache</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#client-caching">Client caching</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#cdn-caching">CDN caching</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#web-server-caching">Web server caching</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#database-caching">Database caching</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#application-caching">Application caching</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#caching-at-the-database-query-level">Caching at the database query level</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#caching-at-the-object-level">Caching at the object level</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#when-to-update-the-cache">When to update the cache</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#cache-aside">Cache-aside</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#write-through">Write-through</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#write-behind-write-back">Write-behind (write-back)</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#refresh-ahead">Refresh-ahead</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="#asynchronism">Asynchronism</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#message-queues">Message queues</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#task-queues">Task queues</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#back-pressure">Back pressure</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="#communication">Communication</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#transmission-control-protocol-tcp">Transmission control protocol (TCP)</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#user-datagram-protocol-udp">User datagram protocol (UDP)</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#remote-procedure-call-rpc">Remote procedure call (RPC)</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#representational-state-transfer-rest">Representational state transfer (REST)</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="#security">Security</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="#appendix">Appendix</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#powers-of-two-table">Powers of two table</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#latency-numbers-every-programmer-should-know">Latency numbers every programmer should know</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#additional-system-design-interview-questions">Additional system design interview questions</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#real-world-architectures">Real world architectures</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#company-architectures">Company architectures</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#company-engineering-blogs">Company engineering blogs</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="#under-development">Under development</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="#credits">Credits</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="#contact-info">Contact info</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="#license">License</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+This structure adds spaces (`&nbsp;`) to mimic the indentation from the original list of topics. You can adjust the indentation levels further by adding or removing `&nbsp;&nbsp;&nbsp;&nbsp;` as needed.
 
 ## How to approach a system design interview question
 
