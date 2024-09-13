@@ -85,6 +85,98 @@
 - [Contact info](#contact-info)
 - [License](#license)
 
+# Table :
+
+Here's the markdown table with the original hyperlinks maintained in the first column:
+
+```markdown
+| Topic                                                                                         | Summary                                                | My Notes |
+| --------------------------------------------------------------------------------------------- | ------------------------------------------------------ | -------- |
+| [System design topics: start here](#system-design-topics-start-here)                          | Introductory topics for system design                  |          |
+| [Step 1: Review the scalability video lecture](#step-1-review-the-scalability-video-lecture)  | Video lecture about scalability                        |          |
+| [Step 2: Review the scalability article](#step-2-review-the-scalability-article)              | Article explaining scalability                         |          |
+| [Next steps](#next-steps)                                                                     | Follow-up actions for further learning                 |          |
+| [Performance vs scalability](#performance-vs-scalability)                                     | Differences between performance and scalability        |          |
+| [Latency vs throughput](#latency-vs-throughput)                                               | Discussion on latency and throughput                   |          |
+| [Availability vs consistency](#availability-vs-consistency)                                   | Concepts of availability and consistency               |          |
+| [CAP theorem](#cap-theorem)                                                                   | Explains the CAP theorem                               |          |
+| [CP - consistency and partition tolerance](#cp---consistency-and-partition-tolerance)         | Consistency and partition tolerance tradeoff           |          |
+| [AP - availability and partition tolerance](#ap---availability-and-partition-tolerance)       | Availability and partition tolerance tradeoff          |          |
+| [Consistency patterns](#consistency-patterns)                                                 | Overview of consistency patterns                       |          |
+| [Weak consistency](#weak-consistency)                                                         | Definition of weak consistency                         |          |
+| [Eventual consistency](#eventual-consistency)                                                 | Overview of eventual consistency                       |          |
+| [Strong consistency](#strong-consistency)                                                     | Definition of strong consistency                       |          |
+| [Availability patterns](#availability-patterns)                                               | Overview of availability strategies                    |          |
+| [Fail-over](#fail-over)                                                                       | Explanation of fail-over techniques                    |          |
+| [Replication](#replication)                                                                   | Discussion on replication methods                      |          |
+| [Availability in numbers](#availability-in-numbers)                                           | Quantifying availability metrics                       |          |
+| [Domain name system](#domain-name-system)                                                     | Explanation of the DNS system                          |          |
+| [Content delivery network](#content-delivery-network)                                         | Overview of CDN concepts                               |          |
+| [Push CDNs](#push-cdns)                                                                       | Explanation of push CDNs                               |          |
+| [Pull CDNs](#pull-cdns)                                                                       | Explanation of pull CDNs                               |          |
+| [Load balancer](#load-balancer)                                                               | Overview of load balancers                             |          |
+| [Active-passive](#active-passive)                                                             | Load balancing technique: active-passive               |          |
+| [Active-active](#active-active)                                                               | Load balancing technique: active-active                |          |
+| [Layer 4 load balancing](#layer-4-load-balancing)                                             | Overview of Layer 4 load balancing                     |          |
+| [Layer 7 load balancing](#layer-7-load-balancing)                                             | Overview of Layer 7 load balancing                     |          |
+| [Horizontal scaling](#horizontal-scaling)                                                     | Explanation of horizontal scaling                      |          |
+| [Reverse proxy (web server)](#reverse-proxy-web-server)                                       | Overview of reverse proxy servers                      |          |
+| [Load balancer vs reverse proxy](#load-balancer-vs-reverse-proxy)                             | Differences between load balancers and reverse proxies |          |
+| [Application layer](#application-layer)                                                       | Explanation of the application layer                   |          |
+| [Microservices](#microservices)                                                               | Overview of microservices architecture                 |          |
+| [Service discovery](#service-discovery)                                                       | Explanation of service discovery                       |          |
+| [Database](#database)                                                                         | Overview of database types                             |          |
+| [Relational database management system (RDBMS)](#relational-database-management-system-rdbms) | Explanation of RDBMS                                   |          |
+| [Master-slave replication](#master-slave-replication)                                         | RDBMS replication technique                            |          |
+| [Master-master replication](#master-master-replication)                                       | Multi-master replication in RDBMS                      |          |
+| [Federation](#federation)                                                                     | Overview of database federation                        |          |
+| [Sharding](#sharding)                                                                         | Explanation of database sharding                       |          |
+| [Denormalization](#denormalization)                                                           | Overview of denormalization                            |          |
+| [SQL tuning](#sql-tuning)                                                                     | Optimization techniques for SQL                        |          |
+| [NoSQL](#nosql)                                                                               | Overview of NoSQL databases                            |          |
+| [Key-value store](#key-value-store)                                                           | Explanation of key-value store                         |          |
+| [Document store](#document-store)                                                             | Overview of document store databases                   |          |
+| [Wide column store](#wide-column-store)                                                       | Explanation of wide column store                       |          |
+| [Graph Database](#graph-database)                                                             | Overview of graph databases                            |          |
+| [SQL or NoSQL](#sql-or-nosql)                                                                 | Discussion on choosing SQL vs NoSQL                    |          |
+| [Cache](#cache)                                                                               | Overview of caching techniques                         |          |
+| [Client caching](#client-caching)                                                             | Explanation of client-side caching                     |          |
+| [CDN caching](#cdn-caching)                                                                   | Explanation of CDN caching                             |          |
+| [Web server caching](#web-server-caching)                                                     | Overview of web server caching                         |          |
+| [Database caching](#database-caching)                                                         | Explanation of database caching                        |          |
+| [Application caching](#application-caching)                                                   | Overview of application caching                        |          |
+| [Caching at the database query level](#caching-at-the-database-query-level)                   | Discussion on caching database queries                 |          |
+| [Caching at the object level](#caching-at-the-object-level)                                   | Explanation of object-level caching                    |          |
+| [When to update the cache](#when-to-update-the-cache)                                         | Strategies for cache updates                           |          |
+| [Cache-aside](#cache-aside)                                                                   | Cache update strategy: cache-aside                     |          |
+| [Write-through](#write-through)                                                               | Cache update strategy: write-through                   |          |
+| [Write-behind (write-back)](#write-behind-write-back)                                         | Cache update strategy: write-back                      |          |
+| [Refresh-ahead](#refresh-ahead)                                                               | Cache update strategy: refresh-ahead                   |          |
+| [Asynchronism](#asynchronism)                                                                 | Overview of asynchronous processes                     |          |
+| [Message queues](#message-queues)                                                             | Explanation of message queues                          |          |
+| [Task queues](#task-queues)                                                                   | Overview of task queues                                |          |
+| [Back pressure](#back-pressure)                                                               | Explanation of back pressure                           |          |
+| [Communication](#communication)                                                               | Overview of communication protocols                    |          |
+| [Transmission control protocol (TCP)](#transmission-control-protocol-tcp)                     | Explanation of TCP                                     |          |
+| [User datagram protocol (UDP)](#user-datagram-protocol-udp)                                   | Explanation of UDP                                     |          |
+| [Remote procedure call (RPC)](#remote-procedure-call-rpc)                                     | Overview of RPC                                        |          |
+| [Representational state transfer (REST)](#representational-state-transfer-rest)               | Explanation of REST                                    |          |
+| [Security](#security)                                                                         | Overview of security in system design                  |          |
+| [Appendix](#appendix)                                                                         | Additional resources and references                    |          |
+| [Powers of two table](#powers-of-two-table)                                                   | Reference table of powers of two                       |          |
+| [Latency numbers every programmer should know](#latency-numbers-every-programmer-should-know) | Reference on latency numbers                           |          |
+| [Additional system design interview questions](#additional-system-design-interview-questions) | List of interview questions                            |          |
+| [Real world architectures](#real-world-architectures)                                         | Discussion of real-world architectures                 |          |
+| [Company architectures](#company-architectures)                                               | Overview of company-specific architectures             |          |
+| [Company engineering blogs](#company-engineering-blogs)                                       | List of engineering blogs by companies                 |          |
+| [Under development](#under-development)                                                       | Future topics under development                        |          |
+| [Credits](#credits)                                                                           | List of contributors and credits                       |          |
+| [Contact info](#contact-info)                                                                 | Contact details for the creators                       |          |
+| [License](#license)                                                                           | Licensing information for the material                 |          |
+```
+
+This table preserves the links in the first column, while keeping the structure intact for you to fill in the summaries and notes as needed!
+
 ## How to approach a system design interview question
 
 > How to tackle a system design interview question.
