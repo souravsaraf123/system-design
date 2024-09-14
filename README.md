@@ -607,10 +607,27 @@ First, you'll need a basic understanding of common principles, learning about wh
 [Scalability](https://web.archive.org/web/20221030091841/http://www.lecloud.net/tagged/scalability/chrono)
 
 - Topics covered:
-  - [Clones](https://web.archive.org/web/20220530193911/https://www.lecloud.net/post/7295452622/scalability-for-dummies-part-1-clones)
-  - [Databases](https://web.archive.org/web/20220602114024/https://www.lecloud.net/post/7994751381/scalability-for-dummies-part-2-database)
-  - [Caches](https://web.archive.org/web/20230126233752/https://www.lecloud.net/post/9246290032/scalability-for-dummies-part-3-cache)
-  - [Asynchronism](https://web.archive.org/web/20220926171507/https://www.lecloud.net/post/9699762917/scalability-for-dummies-part-4-asynchronism)
+
+  - [Clones](https://web.archive.org/web/20220530193911/https://www.lecloud.net/post/7295452622/scalability-for-dummies-part-1-clones) : First golden rule for scalability: every server contains exactly the same codebase and does not store any user-related data, like sessions or profile pictures, on local disc or memory. Use AMI to clone web servers.
+  - [Databases](https://web.archive.org/web/20220602114024/https://www.lecloud.net/post/7994751381/scalability-for-dummies-part-2-database) :
+    2 Paths :
+    - SQL way ==> Do master-slave replication (read from slaves, write to master). Upgrade your master server by adding RAM. Next steps "sharding", "denormalization" and "SQL tuning". Next step caching.
+    - NoSQL way ==> Denormalization from the beginning. Application code does the joins and maintains the write to keep the various tables in sync (since we have denormalized). Next intorduce a cache.
+  - [Caches](https://web.archive.org/web/20230126233752/https://www.lecloud.net/post/9246290032/scalability-for-dummies-part-3-cache) : Web server checks cache first, then queries the DB. Stored in RAM hence super fast to read nad write. NEVER DO FILE BASED CACHING. Use Redis/Memcache. 2 caching patterns available :
+
+    - ##### Cached Database Queries :
+
+      Whenever you do a query to your database, you store the result dataset in cache. A hashed version of your query is the cache key. Cache expiration becomes super difficult (not advisable)
+
+    - ##### Cached Objects :
+
+    Cache objects just as if one would do in code. Caching is better after the complete object (maybe sourced by merging many query results) has been formed. Just store the complete object in cache with a clever cache key. Redis offers very nice features w.r.t expiration and persistence. Example ==> user sessions (never use the database!)
+
+  - [Asynchronism](https://web.archive.org/web/20220926171507/https://www.lecloud.net/post/9699762917/scalability-for-dummies-part-4-asynchronism) : 2 strategies :
+
+    - Async 1 : If we know a pattern , then (generate static content) pre-compute and cache HTML pages beforehand by running heavy computations on the server beforehand and preparing HTML pages nightly (cron job). Push them to CDN.
+
+    - Async 2 (Better) : Whenever user requests a long running job , send instant response saying user request received. Will notify when task is over. Run the job and respond to Frontend when task finished. Tools : RabbitMQ & Redis List help in achieving this.
 
 ### Next steps
 
