@@ -430,8 +430,6 @@
   </tbody>
 </table>
 
-This structure adds spaces (`&nbsp;`) to mimic the indentation from the original list of topics. You can adjust the indentation levels further by adding or removing `&nbsp;&nbsp;&nbsp;&nbsp;` as needed.
-
 ## How to approach a system design interview question
 
 > How to tackle a system design interview question.
