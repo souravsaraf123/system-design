@@ -727,7 +727,7 @@ This approach is seen in file systems and RDBMSes. Strong consistency works well
 
 ### Source(s) and further reading
 
-- [Transactions across data centers](http://snarfed.org/transactions_across_datacenters_io.html) :
+- [Transactions across data centers](http://snarfed.org/transactions_across_datacenters_io.html) : Google IO Video very interesting
 
 <p align="center">
   <img src="images/transactions_across_datacenters_io.png" width="600">
