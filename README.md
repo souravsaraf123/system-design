@@ -701,6 +701,7 @@ AP is a good choice if the business needs to allow for [eventual consistency](#e
 - [A plain english introduction to CAP theorem](http://ksat.me/a-plain-english-introduction-to-cap-theorem)
 - [CAP FAQ](https://github.com/henryr/cap-faq)
 - [The CAP theorem](https://www.youtube.com/watch?v=k-Yaq8AHlFA)
+- [Possible Tradeoffs in CAP Theorm](https://www.infoq.com/articles/cap-twelve-years-later-how-the-rules-have-changed/) : Partioning is time sensitive, detect partition, allow for patition recovery, allow certain operations
 
 ## Consistency patterns
 
@@ -710,7 +711,7 @@ With multiple copies of the same data, we are faced with options on how to synch
 
 After a write, reads may or may not see it. A best effort approach is taken.
 
-This approach is seen in systems such as memcached. Weak consistency works well in real time use cases such as VoIP, video chat, and realtime multiplayer games. For example, if you are on a phone call and lose reception for a few seconds, when you regain connection you do not hear what was spoken during connection loss.
+This approach is seen in systems such as memcached. Weak consistency works well in real time use cases such as cache (Redis), VoIP, video chat, and realtime multiplayer games. For example, if you are on a phone call and lose reception for a few seconds, when you regain connection you do not hear what was spoken during connection loss.
 
 ### Eventual consistency
 
@@ -726,7 +727,21 @@ This approach is seen in file systems and RDBMSes. Strong consistency works well
 
 ### Source(s) and further reading
 
-- [Transactions across data centers](http://snarfed.org/transactions_across_datacenters_io.html)
+- [Transactions across data centers](http://snarfed.org/transactions_across_datacenters_io.html) :
+
+<p align="center">
+  <img src="images/transactions_across_datacenters_io.png" width="600">
+</p>
+
+DB Backup = Backing up a very huge DB takes time, A DB writing can occur after backup process was started.
+
+M/S = Master Slave replication
+
+MM = Master Master replication
+
+2PC = 2 Phased Commit (every DB write must be acknowledged by 2 DBs, incurs latecy , strong consistency. Used by NASDAQ)
+
+Paxos = Consensus based writing protocol, 2 or 3 datacenters out of 10 datacenters (or N) must acknowledge the write
 
 ## Availability patterns
 
