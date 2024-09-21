@@ -737,7 +737,7 @@ DB Backup = Backing up a very huge DB takes time, A DB writing can occur after b
 
 M/S = Master Slave replication
 
-MM = Master Master replication
+MM = Master Master replication (needs a mechanism of merging/serializing writes afterwards)
 
 2PC = 2 Phased Commit (every DB write must be acknowledged by 2 DBs, incurs latecy , strong consistency. Used by NASDAQ)
 
